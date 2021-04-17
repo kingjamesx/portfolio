@@ -1,2 +1,2 @@
 # portfolio
-live link: jamesuyiportfolio.netlify.app
+live link: https://jamesuyiportfolio.netlify.app/
