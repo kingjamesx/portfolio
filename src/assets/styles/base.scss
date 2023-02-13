@@ -1,0 +1,17 @@
+html{
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+body{
+  padding: 0;
+  margin: 0;
+  // background-image: url('../images/background.png') ;
+  background-color: #171B26;
+  color: #fff;
+}
+img{
+  display: block;
+  width: 100%;
+}
