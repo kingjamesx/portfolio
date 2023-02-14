@@ -1,12 +1,18 @@
 <script lang="ts" setup>
-
+import { useNavStore } from '@/stores/Nav'
+ const translate=useNavStore()
+  const handleOpen=()=>{
+      translate.open()
+      const state=translate.$state.translate
+      console.log(state)
+  }
 </script>
 
 <template>
     <div class="header">
       <p class="header-title">James uyi</p>
       <span><img src="../assets/icons/sun.svg" alt=""></span>
-      <div class="header-menu">
+      <div @click="handleOpen" class="header-menu">
         <p>Menu</p>
         <span ><img src="../assets/icons/Menu.svg" alt=""></span>
       </div>

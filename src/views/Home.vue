@@ -110,7 +110,7 @@ which will be information about you.
     margin-top: 2px;
   }
   .icons{
- margin-top: 11rem;
+ margin-top: 13rem;
  display: flex;
  align-items: center;
  gap: 23px;
