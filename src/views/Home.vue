@@ -41,7 +41,7 @@ which will be information about you.
   margin-top: 70px;
 }
   .home{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: auto;
   }
   .tag{

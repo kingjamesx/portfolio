@@ -1,18 +1,16 @@
 <script lang="ts" setup>
-import { reactive } from 'vue';
+import { ref } from 'vue';
 import { useNavStore } from '@/stores/Nav'
  const translate=useNavStore()
   const handleClose=()=>{
       translate.close()
       console.log('hello')
   }
-  const state=!!translate.$state.translate
-  console.log(state)
-  
+ 
 </script>
 
 <template>
-    <div class="nav" :class="[!!state?'show':'hide' ]"  >
+    <div class="nav" >
         <div class="nav-close">
         <span @click="handleClose" class="close"><img src="../assets/icons/x.svg" alt="close"></span>
 
