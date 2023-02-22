@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from '../components/Header.vue'
-
+import BaseButton from '@/components/BaseButton.vue';
 </script>
 <template>
     <div class="about">
@@ -32,7 +32,7 @@ import Header from '../components/Header.vue'
       its own case study.
     </p>
      <div class="btn-container">
-    <button class="about-btn"><p>View my Resume</p><span><img src="../assets/icons/arrow-rightb.svg" alt=""></span></button>
+      <base-button>View my Resume</base-button>
      </div>
   </section>
   <section>

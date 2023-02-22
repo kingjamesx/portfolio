@@ -1,17 +1,13 @@
 import { defineStore } from 'pinia'
-
-export const useNavStore = defineStore('nav', {
-  state: () => {
-    return { translate: null}
-  },
-  // could also be defined as
-  // state: () => ({ count: 0 })
-  actions: {
-    close() {
-      this.translate=false
-    },
-    open() {
-        this.translate=true
-      },
-  },
-})
+import { ref } from 'vue'
+export const useNavStore = defineStore('nav', ()=>{
+  const state=ref(false)
+  function close() {
+    state.value=false
+  }
+  function open() {
+    state.value=true
+  }
+  return {state,close,open}
+}
+  )

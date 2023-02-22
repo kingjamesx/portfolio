@@ -3,8 +3,7 @@ import { useNavStore } from '@/stores/Nav'
  const translate=useNavStore()
   const handleOpen=()=>{
       translate.open()
-      const state=translate.$state.translate
-      console.log(state)
+      console.log(translate.$state.translate)
   }
 </script>
 

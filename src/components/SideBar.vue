@@ -4,13 +4,13 @@ import { useNavStore } from '@/stores/Nav'
  const translate=useNavStore()
   const handleClose=()=>{
       translate.close()
-      console.log('hello')
+      
   }
  
 </script>
 
 <template>
-    <div class="nav" >
+    <div class="nav" :class="translate.state?'show':'hide'" >
         <div class="nav-close">
         <span @click="handleClose" class="close"><img src="../assets/icons/x.svg" alt="close"></span>
 
@@ -102,10 +102,11 @@ import { useNavStore } from '@/stores/Nav'
  margin-top: 40px;
 
   }
- .hide{
+.hide{
     display: none;
- } 
- .show{
+
+}
+.show{
     display: block;
- }
+}
 </style>

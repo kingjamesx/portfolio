@@ -1,5 +1,34 @@
+<script setup lang="ts">
+import Header from '@/components/Header.vue'
+import Project from '@/components/Project.vue';
+ 
+</script>
 <template>
-    <div>
-        Project world
+    <div class="project">
+       <Header></Header>
+       <main>
+        <h1 class="title">Projects</h1>
+        <p class="sub-title">Here you will find some of the personal and clients projects that I created
+with each project containing its own case study.</p>
+   <div>
+    <Project title="Duwiit App" ></Project>
+    <Project title="Duwiit App" imgRight></Project>
+    <Project title="Duwiit App"></Project>
+   </div>
+       </main>
     </div>
 </template>
+<style lang="scss" scoped>
+.title,.sub-title{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 543px;
+}
+
+.project{
+    max-width: 1200px;
+    margin: auto;
+}
+    
+</style>
