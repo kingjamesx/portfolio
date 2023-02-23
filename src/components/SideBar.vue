@@ -38,8 +38,8 @@ import { useNavStore } from '@/stores/Nav'
 
 <style lang="scss" scoped>
 .nav{
+    z-index: 10;
     width: 360px;
-    border: 2px solid red;
     padding: 20px;
     position: absolute;
     right: 0;
@@ -65,7 +65,6 @@ import { useNavStore } from '@/stores/Nav'
     display: flex;
     flex-direction: column;
     gap: 48px;
-    border: 2px solid green;
     padding: 0;
    }
    .list{

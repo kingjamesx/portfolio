@@ -4,6 +4,7 @@ import BaseButton from '@/components/BaseButton.vue';
 </script>
 <template>
     <div class="about">
+        <p class="contact-logo">Contact</p>
         <Header></Header>
         <main>
             <h1>Contact</h1>
@@ -21,6 +22,7 @@ import BaseButton from '@/components/BaseButton.vue';
 .about{
     max-width: 1200px;
     margin: auto;
+    position: relative;
     }
     .input,.text-area{
         display: block;
@@ -40,5 +42,15 @@ import BaseButton from '@/components/BaseButton.vue';
     }
    .btn-box{
     margin-top: 40px;
+   }
+   .contact-logo{
+    font-size: 18.75rem;
+    position: absolute;
+    z-index: -1;
+    top: 20rem;
+    left: -15rem;
+    color: #1B202C;
+    padding: 0;
+    margin-bottom: 0;
    }
 </style>

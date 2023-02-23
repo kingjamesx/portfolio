@@ -4,6 +4,7 @@ import BaseButton from '@/components/BaseButton.vue';
 </script>
 <template>
     <div class="about">
+      <p class="about-logo">About Me</p>
         <Header></Header>
     <div class="about-sect">
         <section>
@@ -51,7 +52,7 @@ import BaseButton from '@/components/BaseButton.vue';
 .about{
     max-width: 1200px;
     margin: auto;
-  
+   position: relative;
 }
  .about-sect{
     display: flex;
@@ -86,5 +87,15 @@ import BaseButton from '@/components/BaseButton.vue';
  .about-img img{
     width: 620px;
     height: 645px;
+ }
+ .about-logo{
+   font-size: 18.75rem;
+    position: absolute;
+    z-index: -1;
+    top: 24rem;
+    left: -15rem;
+    color: #1B202C;
+    padding: 0;
+    margin-bottom: 0;
  }
 </style>

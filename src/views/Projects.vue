@@ -5,6 +5,7 @@ import Project from '@/components/Project.vue';
 </script>
 <template>
     <div class="project">
+        <p class="projects-logo">projects</p>
        <Header></Header>
        <main>
         <h1 class="title">Projects</h1>
@@ -29,6 +30,18 @@ with each project containing its own case study.</p>
 .project{
     max-width: 1200px;
     margin: auto;
+    position: relative;
+}
+.projects-logo{
+    font-size: 18.75rem;
+    position: absolute;
+    z-index: -1;
+    top: 8rem;
+    left: -40rem;
+    color: #1B202C;
+    padding: 0;
+    margin-bottom: 0;
+    transform: rotate(-90deg);
 }
     
 </style>

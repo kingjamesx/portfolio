@@ -30,6 +30,7 @@ containing its own case study.</p>
 </template>
 <style lang="scss">
    .box{
+    margin-top: 48px;
     display: flex;
     justify-content: center;
     gap: 50px;
