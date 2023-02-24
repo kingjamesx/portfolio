@@ -6,7 +6,7 @@ import BaseButton from '@/components/BaseButton.vue';
     <div class="about">
         <p class="contact-logo">Contact</p>
         <Header></Header>
-        <main>
+        <main class="about-main">
             <h1>Contact</h1>
             <p>Get in touch or shoot me an email directly on talk2james.uj@gmail.com</p>
             <form action="">
@@ -42,6 +42,8 @@ import BaseButton from '@/components/BaseButton.vue';
     }
    .btn-box{
     margin-top: 40px;
+    
+
    }
    .contact-logo{
     font-size: 18.75rem;
@@ -53,4 +55,12 @@ import BaseButton from '@/components/BaseButton.vue';
     padding: 0;
     margin-bottom: 0;
    }
+   .about-main{
+    padding-inline: 2rem;
+   }
+   @media (max-width: 500px) {
+  .contact-logo{
+    display: none;
+  }
+}
 </style>

@@ -9,6 +9,7 @@
 
 <style lang="scss" scoped>
      .home-btn{
+      cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +48,7 @@
   .btn-arrow{
     margin-top: 2px;
   }
+
 </style>
 
 <!-- <button class="home-btn"><p>Contact Me</p> <span class="btn-arrow btn-arrow-1"><img src="../assets/icons/arrow-right.svg" alt=""></span></button> -->

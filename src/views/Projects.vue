@@ -43,5 +43,9 @@ with each project containing its own case study.</p>
     margin-bottom: 0;
     transform: rotate(-90deg);
 }
-    
+@media (max-width:957px){
+    .sub-title{
+        padding-inline: 2rem;
+    }
+}
 </style>

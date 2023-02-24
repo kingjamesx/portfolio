@@ -17,8 +17,8 @@ information about you. You can put some few lines of text here
 which will be information about you.
       </p>
       <div class="home-btn-box">
-        <base-button>Contact Me</base-button>
-        <base-button>Learn More</base-button>
+        <a href="#/contact"><base-button>Contact Me</base-button></a>
+        <a href="#/about"><base-button>Learn More</base-button></a>
 
       </div>
       <div class="icons">
@@ -29,7 +29,7 @@ which will be information about you.
 
       </div>
     </section>
-    <section>
+    <section class="img-container">
       <span class="home-img"><img src="../assets/images/home.jpg" alt="human hand"/></span>
     </section>
 
@@ -49,6 +49,7 @@ which will be information about you.
     padding: 10px;
     background-color: #262D40;
     border-radius: 3px;
+    line-height: 2;
   }
   .title{
     font-size: 3.25rem;
@@ -61,10 +62,12 @@ which will be information about you.
   .main{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
   .home-img img{
     width: 620px;
     height: 645px;
+    margin:auto;
   }
   .home-btn-box{
     margin-top: 35px;
@@ -73,7 +76,7 @@ which will be information about you.
   }
  
   .icons{
- margin-top: 13rem;
+ margin-top: 10rem;
  display: flex;
  align-items: center;
  gap: 23px;
@@ -85,5 +88,39 @@ which will be information about you.
 
  }
   }
-  
+ @media (max-width:1246px) {
+   .main{
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+   .icons{
+    margin-top: 2rem;
+   }
+   .img-container{
+     width: 70%;
+     overflow: hidden;
+     
+   }
+.main-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+ } 
+ a{
+  text-decoration: none;
+ }
+ @media (max-width:467px) {
+  .home-btn-box{
+    flex-direction: column;
+  }
+  .img-container{
+     width: 90%;
+  }
+  .title{
+    font-size: 2.25rem;
+  }
+}
 </style>

@@ -20,7 +20,7 @@ console.log(order.value)
         <span class="image"><img src="@/assets/images/test-img.png" alt=""></span>
         <div class="content ">
             <h2>{{ title }}</h2>
-            <p>Here you will find some of the personal and clients projects that I created
+            <p class="sub-title">Here you will find some of the personal and clients projects that I created
 with each project containing its own case study. Here you will find some
 of the personal and clients projects that I created with each project
 containing its own case study.</p>
@@ -44,5 +44,19 @@ containing its own case study.</p>
    }
    .reverse{
     flex-direction: row-reverse;
+   }
+   @media (max-width:957px) {
+    .box{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+ 
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
    }
 </style>

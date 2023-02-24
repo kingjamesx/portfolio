@@ -9,7 +9,7 @@ import { useNavStore } from '@/stores/Nav'
 
 <template>
     <div class="header">
-      <p class="header-title">James uyi</p>
+    <a href="#/"><p class="header-title">James uyi</p></a>  
       <span><img src="../assets/icons/sun.svg" alt=""></span>
       <div @click="handleOpen" class="header-menu">
         <p>Menu</p>
@@ -28,6 +28,7 @@ import { useNavStore } from '@/stores/Nav'
     &-title{
         font-size: 1.25rem;
         text-transform: uppercase;
+        cursor: pointer;
     }
     &-menu{
         display: flex;
@@ -36,5 +37,14 @@ import { useNavStore } from '@/stores/Nav'
         font-size: 1.5rem;
         text-transform: uppercase;
     }
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width:1246px){
+ .header{
+  padding-inline: 2rem;
+ }
 }
 </style>

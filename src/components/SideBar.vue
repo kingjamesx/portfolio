@@ -41,10 +41,12 @@ import { useNavStore } from '@/stores/Nav'
     z-index: 10;
     width: 360px;
     padding: 20px;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     top: 0;
     background-color: #171B26;
+    position: fixed;
+    height: 100%;
 }
 .nav-close{
     display: flex;
@@ -107,5 +109,10 @@ import { useNavStore } from '@/stores/Nav'
 }
 .show{
     display: block;
+}
+@media (max-height:667px) {
+    .nav-btn-box{
+        margin-top: 100px;
+    }
 }
 </style>

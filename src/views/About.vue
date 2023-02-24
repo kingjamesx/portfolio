@@ -66,6 +66,7 @@ import BaseButton from '@/components/BaseButton.vue';
  }
  .btn-container{
     margin-top:48px ;
+    padding-bottom: 2rem;
  }
  .about-btn{
     display: flex;
@@ -87,6 +88,7 @@ import BaseButton from '@/components/BaseButton.vue';
  .about-img img{
     width: 620px;
     height: 645px;
+    
  }
  .about-logo{
    font-size: 18.75rem;
@@ -97,5 +99,25 @@ import BaseButton from '@/components/BaseButton.vue';
     color: #1B202C;
     padding: 0;
     margin-bottom: 0;
+ }
+ @media (max-width: 1287px) {
+  .about-sect{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-inline: 2rem;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+  .about-img img{
+    width: 100%;
+  }
+ }
+ @media (max-width: 500px){
+  .about-logo{
+    display: none;
+  }
  }
 </style>
