@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { useNavStore } from '@/stores/Nav'
+import { useNavStore } from '@/stores/Nav.js'
  const translate=useNavStore()
   const handleOpen=()=>{
       translate.open()
-      console.log(translate.$state.translate)
+      
   }
  
 </script>
