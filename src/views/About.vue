@@ -1,6 +1,26 @@
 <script setup lang="ts">
+import gsap from 'gsap'
 import Header from '../components/Header.vue'
 import BaseButton from '@/components/BaseButton.vue';
+import { onMounted } from "vue";
+
+onMounted(()=>{
+  gsap.fromTo(
+    ".about",
+    {
+      opacity: 0,
+      y: "100%",
+    },
+    {
+      duration: 1.2,
+      opacity: 1,
+      y: "0",
+      ease: "power3.inOut",
+      delay: 0.5,
+    }
+  );
+}  
+)
 </script>
 <template>
     <div class="about">

@@ -4,6 +4,7 @@ import Project from '@/components/Project.vue';
 import image from '@/assets/images/searchflix.png' 
 import port from '@/assets/images/port.png'
 import fintech from '@/assets/images/fintech.png'
+
 </script>
 <template>
     <div class="project">
