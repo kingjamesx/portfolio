@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import Header from '@/components/Header.vue'
 import Project from '@/components/Project.vue';
- 
+import image from '@/assets/images/searchflix.png' 
+import port from '@/assets/images/port.png'
+import fintech from '@/assets/images/fintech.png'
 </script>
 <template>
     <div class="project">
@@ -12,9 +14,9 @@ import Project from '@/components/Project.vue';
         <p class="sub-title">Here you will find some of the personal and clients projects that I created
 with each project containing its own case study.</p>
    <div>
-    <Project title="Duwiit App" ></Project>
-    <Project title="Duwiit App" imgRight></Project>
-    <Project title="Duwiit App"></Project>
+    <Project title="Fintech App"  :img="fintech" subtitle="lead a team of 6 frontend developers to deliver UI of a fintech Application" ></Project>
+    <Project title="Personal Portfolio" :img="port" subtitle="Built my personal portfolio using Vue js "></Project>
+    <Project title="SearchFlix" :img="image" subtitle="Consumed themoviedb in building an app where you can search for any movie and filter base on genre release date" url="https://moviesearchflix.netlify.app/"></Project>
    </div>
        </main>
     </div>
@@ -42,6 +44,9 @@ with each project containing its own case study.</p>
     padding: 0;
     margin-bottom: 0;
     transform: rotate(-90deg);
+}
+main{
+    padding-bottom: 3rem;
 }
 @media (max-width:957px){
     .sub-title{

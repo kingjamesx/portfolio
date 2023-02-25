@@ -11,3 +11,4 @@ export const useNavStore = defineStore('nav', ()=>{
   return {state,close,open}
 }
   )
+ 

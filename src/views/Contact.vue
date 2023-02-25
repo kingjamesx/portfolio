@@ -8,11 +8,11 @@ import BaseButton from '@/components/BaseButton.vue';
         <Header></Header>
         <main class="about-main">
             <h1>Contact</h1>
-            <p>Get in touch or shoot me an email directly on talk2james.uj@gmail.com</p>
-            <form action="">
-                <input type="text" placeholder="Name" class="input">
-                <input type="text" placeholder="Email" class="input">
-                <textarea name="" id="" cols="30" rows="5" placeholder="Message" class="text-area"></textarea>
+            <p>Get in touch or shoot me an email directly on <a href="mailto:talk2james.uj@gmail.com">talk2james.uj@gmail.com</a> </p>
+            <form action="https://formsubmit.co/26d8ad083932f8d8e61c6ddf7594010c" method="POST">
+                <input type="text" placeholder="Name" name="name" class="input">
+                <input type="text" placeholder="Email" name="email" class="input">
+                <textarea name="message" id="" cols="30" rows="5" placeholder="Message" class="text-area" ></textarea>
                 <div class="btn-box"><base-button>Send Message</base-button></div>
             </form>
         </main>
@@ -36,6 +36,7 @@ import BaseButton from '@/components/BaseButton.vue';
         max-width: 520px;
         width: 100%;
         font-weight: 500;
+        font-size: 1rem;
     }
     .input{
         height: 50px;
@@ -50,13 +51,16 @@ import BaseButton from '@/components/BaseButton.vue';
     position: absolute;
     z-index: -1;
     top: 20rem;
-    left: -15rem;
+    left: -7rem;
     color: #1B202C;
     padding: 0;
     margin-bottom: 0;
    }
    .about-main{
     padding-inline: 2rem;
+   }
+   .text-area{
+    padding: 20px;
    }
    @media (max-width: 500px) {
   .contact-logo{

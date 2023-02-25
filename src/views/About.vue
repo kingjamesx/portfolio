@@ -11,14 +11,16 @@ import BaseButton from '@/components/BaseButton.vue';
     <h1 class="title">About</h1>
     <hr>
     <p class="about-text">
-      Here you will find some of the personal and clients projects that I
-      created with each project containing its own case study. Here you will
-      find some of the personal and clients projects that I created with each
-      project containing its own case study. Here you will find some of the
-      personal and clients projects that I created with each project containing
-      its own case study.
+  
+
+Hello there! I am James Uyi, a front-end developer currently living in Lagos . A Botany graduate from Lagos State University, I am a career-changer looking to establish myself as a professional developer.
+
+A contributing member of the #Laptop4developers community, I completed the front-end developer program. I aslo have a certificate in Web Design & Development from Altschool Africa.
+
+When I'm not coding, I'm spending time with my friends talking about new technologies. I love music and reading, so there's a good chance I'm listening to music or reading now!
+
     </p>
-    <p class="about-text">
+    <!-- <p class="about-text">
       Here you will find some of the personal and clients projects that I
       created with each project containing its own case study. Here you will
       find some of the personal and clients projects that I created with each
@@ -31,9 +33,9 @@ import BaseButton from '@/components/BaseButton.vue';
       project containing its own case study. Here you will find some of the
       personal and clients projects that I created with each project containing
       its own case study.
-    </p>
+    </p> -->
      <div class="btn-container">
-      <base-button>View my Resume</base-button>
+    <a href="https://docs.google.com/document/d/1CCW1w02FjxLDFQt6id-8-80QjXY7F5kzvBN430xgsK8/edit?usp=sharing"> <base-button>View my Resume</base-button></a> 
      </div>
   </section>
   <section>
@@ -60,6 +62,7 @@ import BaseButton from '@/components/BaseButton.vue';
  }
  .about-text{
     margin-top: 20px;
+    font-size: 1.4rem;
  }
  .title{
     font-size: 2.25rem;
@@ -95,7 +98,7 @@ import BaseButton from '@/components/BaseButton.vue';
     position: absolute;
     z-index: -1;
     top: 24rem;
-    left: -15rem;
+    left: -10rem;
     color: #1B202C;
     padding: 0;
     margin-bottom: 0;

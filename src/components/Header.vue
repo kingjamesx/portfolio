@@ -5,12 +5,13 @@ import { useNavStore } from '@/stores/Nav'
       translate.open()
       console.log(translate.$state.translate)
   }
+ 
 </script>
 
 <template>
     <div class="header">
     <a href="#/"><p class="header-title">James uyi</p></a>  
-      <span><img src="../assets/icons/sun.svg" alt=""></span>
+      <!-- <span ><img src="../assets/icons/sun.svg" alt=""></span> -->
       <div @click="handleOpen" class="header-menu">
         <p>Menu</p>
         <span ><img src="../assets/icons/Menu.svg" alt=""></span>
