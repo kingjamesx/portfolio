@@ -3,7 +3,7 @@ import Header from '@/components/Header.vue'
 import Project from '@/components/Project.vue';
 import image from '@/assets/images/searchflix.png' 
 import port from '@/assets/images/port.png'
-import fintech from '@/assets/images/fintech.png'
+import awaskill from '@/assets/images/awaskill.png'
 
 </script>
 <template>
@@ -15,7 +15,7 @@ import fintech from '@/assets/images/fintech.png'
         <p class="sub-title">Here you will find some of the personal and clients projects that I created
 with each project containing its own case study.</p>
    <div>
-    <Project title="Fintech App"  :img="fintech" subtitle="lead a team of 6 frontend developers to deliver UI of a fintech Application" url="https://github.com/kingjamesx" ></Project>
+    <Project title="Awaskill"  :img="awaskill" subtitle="A platform that makes it easy for people just getting started in tech start right" url="https://github.com/kingjamesx/quiz-app" ></Project>
     <Project title="Personal Portfolio" :img="port" subtitle="Built my personal portfolio using Vue js " url="https://jamesuyiportfolio.netlify.app/"></Project>
     <Project title="SearchFlix" :img="image" subtitle="Consumed themoviedb in building an app where you can search for any movie and filter base on genre release date" url="https://moviesearchflix.netlify.app/"></Project>
    </div>
