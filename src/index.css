@@ -1,0 +1,2 @@
+@import "tailwindcss";
+@config "./tailwindcss/utilities/tailwind.config.js";
