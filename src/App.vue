@@ -3,7 +3,7 @@ import crowd from "@/assets/images/crowd.png";
 import devcareer from "@/assets/images/devcareer.png";
 import asyncpay from "@/assets/images/async.png";
 
-const email = "talk2james.uj@gmail.com";
+const email = "hello@jamesuyi.com";
 const resume =
   "https://docs.google.com/document/d/1CCW1w02FjxLDFQt6id-8-80QjXY7F5kzvBN430xgsK8/edit?usp=sharing";
 
