@@ -2,12 +2,21 @@
 import crowd from "@/assets/images/crowd.png";
 import devcareer from "@/assets/images/devcareer.png";
 import asyncpay from "@/assets/images/async.png";
+import askmartha from "@/assets/images/askmartha.jpg";
 
 const email = "hello@jamesuyi.com";
 const resume =
   "https://docs.google.com/document/d/1CCW1w02FjxLDFQt6id-8-80QjXY7F5kzvBN430xgsK8/edit?usp=sharing";
 
 const projects = [
+  {
+    title: "Martha AI",
+    description:
+      "An AI customer support agent that resolves tickets in about 30 seconds across WhatsApp, web, email, voice, Telegram and Slack.",
+    tags: ["AI", "Customer support"],
+    img: askmartha,
+    url: "https://www.askmartha.ai/",
+  },
   {
     title: "Async Pay",
     description:
@@ -101,7 +110,7 @@ const year = new Date().getFullYear();
         <h2 class="section-label">About</h2>
         <div class="about-body">
           <p>
-            I came to engineering from botany — a Lagos State University
+            I came to engineering from botany as a Lagos State University
             graduate who switched careers and never looked back. I went through
             the #Laptop4Developers front-end program and earned a certificate in
             Web Design &amp; Development from AltSchool Africa.
