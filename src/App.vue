@@ -64,7 +64,7 @@ const year = new Date().getFullYear();
           Frontend engineer crafting clear, considered interfaces.
         </h1>
         <p class="lede">
-          I'm James Uyi Osayi, based in Lagos. I build fast, accessible web
+          I'm James Uyi, based in Lagos. I build fast, accessible web
           apps with a user-first eye for design, and teach JavaScript to people
           new to tech.
         </p>
