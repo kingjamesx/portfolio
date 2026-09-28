@@ -171,6 +171,8 @@ const year = new Date().getFullYear();
   }
   &-links {
     display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
     gap: 24px;
     font-size: 0.9375rem;
     a {
@@ -403,7 +405,8 @@ const year = new Date().getFullYear();
     padding: 0 16px;
   }
   .nav-links {
-    gap: 16px;
+    gap: 18px;
+    font-size: 0.875rem;
   }
   .hero {
     padding: 64px 0 64px;
