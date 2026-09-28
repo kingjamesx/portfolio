@@ -1,58 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-html{
+:root {
+  --bg: #fafaf9;
+  --fg: #111110;
+  --muted: #63635e;
+  --surface: #f0efec;
+  --border: #e4e3df;
+  --accent: #22a06b;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0e0d;
+    --fg: #ededec;
+    --muted: #9a9a95;
+    --surface: #1a1a19;
+    --border: #262625;
+    --accent: #3ecf8e;
+  }
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-*,*::after,*::before{
-  box-sizing: inherit;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
-*{
-  cursor: none;
-}
-body{
-  padding: 0;
+
+body {
   margin: 0;
-  // background-image: url('../images/background.png') ;
-  background-color: #171B26;
-  color: #fff;
-  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
-img{
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
-.cursor{
- position: fixed;
- top: 0;
- left: 0;
- width: 20px;
- height: 20px;
- border-radius: 50%;
- background-color: #fff;
- z-index: 100;
+::selection {
+  background: var(--fg);
+  color: var(--bg);
 }
-.follower{
-  position: fixed;
-  top: 0;
-  left: 0;
-width: 50px;
-height: 50px;
-border-radius: 50%;
-background-color: #6eff00;
-opacity: 0.5;
-z-index: 100;
 
+:focus-visible {
+  outline: 2px solid var(--fg);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
-.light{
-  background-color: #fff;
-  color: #171B26;
-}
-@media (max-width:500px) {
-  .follower{
-    display: none;
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  .cursor{
-    display: none;
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
   }
- *{cursor: pointer;} 
 }
